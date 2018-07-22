@@ -1,11 +1,11 @@
-﻿using ExerciseMVC01.Models;
+﻿using Session2.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace ExerciseMVC01.Controllers
+namespace Session2.Controllers
 {
     public class UserController : Controller
     {
@@ -24,15 +24,17 @@ namespace ExerciseMVC01.Controllers
 
         public JsonResult List()
         {
+            // list the user created data in top
+            // response as response
             return Json(Users, JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
-        public JsonResult Create(string username, string email, string phone, int age)
+        public JsonResult Create(string username, string email, string phone, int age)// receive data
         {
             var user = new User { Username = username, Email = email, Phone = phone, Age = age };
             Users.Add(user);
-            return Json(user);
+            return Json(user);// response json
         }
 
         public ActionResult Create()

@@ -1,0 +1,3 @@
+{"Username":"admin","Email":"0963253394","Phone":"3","Age":4}
+{"Username":"1","Email":"0909327339","Phone":"1","Age":1}
+{"Username":"Nguyen Tan Duc","Email":"surf.webed9@gmail.com","Phone":"0963253394","Age":24}

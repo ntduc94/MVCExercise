@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace ExerciseMVC01
+namespace Session2
 {
     public class BundleConfig
     {
